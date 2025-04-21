@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find and Be Found</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Love+Ya+Like+A+Sister&family=Micro+5&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Find and Be Found</h1>
+            <p class="subtitle">Connect with amazing people building incredible things</p>
+        </header>
+
+        <main>
+            <form id="profileForm" class="form-container">
+                <div class="form-group">
+                    <label for="name">
+                        <i class='bx bx-user'></i> Your Name
+                    </label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="location">
+                        <i class='bx bx-map'></i> Location
+                    </label>
+                    <input type="text" id="location" name="location" required placeholder="Where are you based?">
+                </div>
+
+                <div class="form-group">
+                    <label for="interests">
+                        <i class='bx bx-star'></i> Interests
+                    </label>
+                    <input type="text" id="interests" name="interests" placeholder="Comma-separated interests (e.g., AI, design, startups)">
+                </div>
+
+                <div class="form-group">
+                    <label for="intro">
+                        <i class='bx bx-message-square-detail'></i> Brief Introduction
+                    </label>
+                    <textarea id="intro" name="intro" rows="3" placeholder="Tell us about yourself"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="socialLinks">
+                        <i class='bx bx-link'></i> Social Links
+                    </label>
+                    <input type="text" id="socialLinks" name="socialLinks" placeholder="Your social media profiles">
+                </div>
+
+                <div class="form-group">
+                    <label for="building">
+                        <i class='bx bx-building-house'></i> What are you building?
+                    </label>
+                    <textarea id="building" name="building" rows="2" placeholder="Describe your current project or work"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class='bx bx-plus'></i> Create Profile
+                </button>
+            </form>
+
+            <div id="searchSection" class="search-container">
+                <h2><i class='bx bx-search-alt'></i> Find People</h2>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="What kind of person are you looking for?">
+                    <button id="searchBtn">
+                        <i class='bx bx-search'></i> Search
+                    </button>
+                </div>
+                <div id="searchResults" class="results-container"></div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
